@@ -42,14 +42,16 @@ Asi mismo permite vizualizar cada pokemon con sus caracterticas.
 ## 🖼️ Capturas
 
 🏠 Home
+
 ![Vista del home](src/assets/images/Home.PNG)
 
-Buscador + filtro por tipo.
 
 ⭐ Favoritos
+
 ![Vista del home](src/assets/images/Favoritos.PNG)
 
 🎈 Tarjeta de Pokemon
+
 ![Vista del home](src/assets/images/Pokemon.PNG)
 
 

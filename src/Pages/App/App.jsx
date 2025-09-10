@@ -18,7 +18,7 @@ const AppRoutes = () => {
 const App = () => {
   return (
     <PokemonProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/Pokedex'>
         <AppRoutes />
       </BrowserRouter>
     </PokemonProvider>

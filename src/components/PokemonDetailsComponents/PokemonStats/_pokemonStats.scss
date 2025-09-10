@@ -1,0 +1,62 @@
+.pokemon-stats {
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 70px; 
+      width: 1px;
+      background: #ddd; 
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: 60px 50px 1fr;
+      align-items: center;
+      margin-bottom: 0.6rem;
+      padding-left: 0.5rem;
+
+      .stat-name {
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-align: right;
+        padding-right: 10px;
+        text-align: left;
+      }
+
+      .stat-value {
+        font-size: 0.9rem;
+        text-align: center;
+        padding-left: 10px;
+      }
+
+      .progress {
+        background: #f2f2f2;
+        border-radius: 4px;
+        height: 6px;
+        width: 100%;
+        overflow: hidden;
+
+        .progress-bar {
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

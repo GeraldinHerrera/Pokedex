@@ -1,0 +1,125 @@
+.favorites-container {
+  padding: 0.5rem 4rem 4rem 4rem;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  .favorites-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #f8fafc, #e6f2ff);
+    border-radius: 9px;
+
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffcb05; 
+      text-shadow: 2px 2px 0px #acc8e4; 
+      letter-spacing: 1px;
+    }
+     .back-button {
+    position: absolute;
+    left: 6%;
+    top: 6%;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      color: #ffcb05;
+    }
+  }
+  }
+
+  .cards-grid_container-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+}
+
+
+// Animación
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.loading-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  gap: 1.5rem;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #ff1c1c 50%, #ffffff 50%);
+    border: 4px solid #000;
+    border-radius: 50%;
+    opacity: 0.08;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 4px;
+    background: #000;
+    opacity: 0.08;
+    z-index: 0;
+  }
+
+  span {
+    z-index: 1;
+    position: relative;
+
+  }
+
+  .add-btn {
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    bottom: 2rem;
+    background-color: #ffcb05;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+
+.pokemon-detail {
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid darkgray !important;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px darkgray;
+
+  .description {
+    margin: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #444;
+    text-align: center;
+  }
+}
